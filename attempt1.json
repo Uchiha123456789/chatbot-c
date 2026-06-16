@@ -1,0 +1,1 @@
+{"answers": [{"question_id": 1, "student_answer": "do-while"}, {"question_id": 2, "student_answer": "Vòng lặp for dùng khi biết trước số lần lặp, còn while kiểm tra điều kiện trước mỗi vòng lặp"}, {"question_id": 3, "student_answer": "#include <stdio.h>\nint main() {\n    for (int i = 1; i <= 5; i++) {\n        printf(\"%d\n\", i);\n    }\n    return 0;\n}"}]}

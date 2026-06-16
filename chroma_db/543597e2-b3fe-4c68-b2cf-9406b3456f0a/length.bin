@@ -1,0 +1,1 @@
+từ 0 đến in-1 cho cột printf("%3d ", ia[i][ij]); printf("\n"); //xuống dòng để in hàng kế tiếp } printf("\n"); //Tao khoang cach giua 2 ma tran //In ma tran theo thu tu nguoc for (i = in-1; i >= 0; i--) //vòng for có giá trị i chạy từ in-1 đến 0 cho hàng { //vòng for có giá trị ij chạy từ in-1 đến 0 cho cột for (ij = in-1; ij >= 0 ; ij--) printf( #inclu

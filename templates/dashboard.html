@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}Tiến độ học — Chatbot dạy lập trình C{% endblock %}
+{% block body %}
+<div class="app-shell">
+    <aside class="sidebar">
+        <a class="nav-link" href="/chat">💬 Trò chuyện</a>
+        <a class="nav-link" href="/quiz">📝 Quiz</a>
+        <a class="nav-link active" href="/dashboard">📊 Tiến độ</a>
+        <div class="sidebar-spacer"></div>
+        <form id="logout-form" class="logout-form">
+            <button type="submit">Đăng xuất</button>
+        </form>
+    </aside>
+    <main class="dashboard-shell">
+        <h1>📊 Tiến độ học tập</h1>
+        <p class="caption">Mức độ thành thạo từng chủ đề và lịch ôn tập theo thuật toán lặp lại ngắt quãng (SM-2).</p>
+
+        <section class="dashboard-section">
+            <h2>Mức độ thành thạo theo chủ đề</h2>
+            <div id="mastery-chart-wrap" class="chart-wrap">
+                <canvas id="mastery-chart"></canvas>
+            </div>
+            <p id="mastery-empty" class="caption hidden">Chưa có dữ liệu — hãy làm vài bài quiz để bắt đầu theo dõi tiến độ.</p>
+        </section>
+
+        <section class="dashboard-section">
+            <h2>Cần ôn tập hôm nay</h2>
+            <div id="due-list" class="due-list"></div>
+        </section>
+
+        <section class="dashboard-section">
+            <h2>Chi tiết theo chủ đề</h2>
+            <table class="progress-table">
+                <thead>
+                    <tr>
+                        <th>Chủ đề</th>
+                        <th>Thành thạo</th>
+                        <th>Hệ số dễ nhớ</th>
+                        <th>Chu kỳ (ngày)</th>
+                        <th>Số lần lặp đạt</th>
+                        <th>Lần ôn gần nhất</th>
+                        <th>Ôn tiếp theo</th>
+                    </tr>
+                </thead>
+                <tbody id="progress-table-body"></tbody>
+            </table>
+        </section>
+    </main>
+</div>
+{% endblock %}
+{% block extra_js %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/static/js/dashboard.js"></script>
+{% endblock %}

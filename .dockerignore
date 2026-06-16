@@ -1,0 +1,16 @@
+venv/
+__pycache__/
+**/__pycache__/
+*.pyc
+.env
+backups/
+test_result_*.json
+*.md
+docs/
+tests/
+.pytest_cache/
+attempt*.json
+quiz*.json
+result*.json
+test_questions.json
+lo_trinh_do_an.docx

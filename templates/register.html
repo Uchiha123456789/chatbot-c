@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Đăng ký — Chatbot dạy lập trình C{% endblock %}
+{% block body %}
+<main class="auth-shell">
+    <form id="auth-form" class="auth-card">
+        <h1>🤖 Tạo tài khoản</h1>
+        <p class="caption">Lưu lại lịch sử hội thoại và theo dõi tiến độ học tập của bạn</p>
+        <div id="auth-error" class="auth-error" hidden></div>
+        <label>Tên đăng nhập
+            <input name="username" type="text" required pattern="[a-zA-Z0-9_]{3,32}"
+                   title="3-32 ký tự, chỉ gồm chữ, số và dấu gạch dưới" autocomplete="username">
+        </label>
+        <label>Tên hiển thị (tuỳ chọn)
+            <input name="display_name" type="text" maxlength="128" autocomplete="nickname">
+        </label>
+        <label>Mật khẩu
+            <input name="password" type="password" required minlength="6" autocomplete="new-password">
+        </label>
+        <button type="submit">Đăng ký</button>
+        <p class="auth-switch">Đã có tài khoản? <a href="/login">Đăng nhập</a></p>
+    </form>
+</main>
+{% endblock %}
+{% block extra_js %}
+<script>const AUTH_ENDPOINT = "/auth/register"; const AUTH_REDIRECT = "/chat";</script>
+<script src="/static/js/auth.js"></script>
+{% endblock %}

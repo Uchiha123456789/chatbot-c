@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Chatbot dạy lập trình C{% endblock %}
+{% block body %}
+<div class="app-shell">
+    <aside class="sidebar">
+        <a class="nav-link active" href="/chat">💬 Trò chuyện</a>
+        <a class="nav-link" href="/quiz">📝 Quiz</a>
+        <a class="nav-link" href="/dashboard">📊 Tiến độ</a>
+        <button id="new-conversation" class="new-conversation-btn">+ Cuộc trò chuyện mới</button>
+        <nav id="conversation-list" class="conversation-list"></nav>
+        <form id="logout-form" class="logout-form">
+            <button type="submit">Đăng xuất</button>
+        </form>
+    </aside>
+    <main class="chat-shell">
+        <h1>🤖 Chatbot dạy lập trình C</h1>
+        <p class="caption">Hỏi bất kỳ câu hỏi nào về lập trình C — câu trả lời được lưu lại theo từng cuộc trò chuyện.</p>
+        <div id="messages" class="messages"></div>
+        <form id="ask-form" class="ask-form">
+            <input id="question" type="text" placeholder="Nhập câu hỏi của bạn..." autocomplete="off" required>
+            <button type="submit">Gửi</button>
+        </form>
+    </main>
+</div>
+{% endblock %}
+{% block extra_js %}
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js"></script>
+<script src="/static/js/chat.js"></script>
+{% endblock %}

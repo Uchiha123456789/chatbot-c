@@ -1,0 +1,62 @@
+[
+    {
+        "question": "Biến trong C là gì?",
+        "topic": "biến"
+    },
+    {
+        "question": "Kiểu dữ liệu int và float khác nhau như thế nào?",
+        "topic": "kiểu dữ liệu"
+    },
+    {
+        "question": "Câu lệnh if-else dùng như thế nào?",
+        "topic": "điều kiện"
+    },
+    {
+        "question": "Vòng lặp for trong C viết như thế nào?",
+        "topic": "vòng lặp"
+    },
+    {
+        "question": "Vòng lặp while khác for như thế nào?",
+        "topic": "vòng lặp"
+    },
+    {
+        "question": "Hàm trong C là gì và cách khai báo?",
+        "topic": "hàm"
+    },
+    {
+        "question": "Mảng trong C là gì?",
+        "topic": "mảng"
+    },
+    {
+        "question": "Con trỏ trong C là gì?",
+        "topic": "con trỏ"
+    },
+    {
+        "question": "Toán tử & và * trong con trỏ có nghĩa gì?",
+        "topic": "con trỏ"
+    },
+    {
+        "question": "Cấp phát bộ nhớ động bằng malloc như thế nào?",
+        "topic": "bộ nhớ"
+    },
+    {
+        "question": "Struct trong C dùng để làm gì?",
+        "topic": "struct"
+    },
+    {
+        "question": "Đệ quy trong C là gì?",
+        "topic": "đệ quy"
+    },
+    {
+        "question": "File I/O trong C dùng như thế nào?",
+        "topic": "file"
+    },
+    {
+        "question": "scanf và printf dùng như thế nào?",
+        "topic": "input/output"
+    },
+    {
+        "question": "String trong C khác Java như thế nào?",
+        "topic": "string"
+    }
+]

@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}Quiz — Chatbot dạy lập trình C{% endblock %}
+{% block body %}
+<div class="app-shell">
+    <aside class="sidebar">
+        <a class="nav-link" href="/chat">💬 Trò chuyện</a>
+        <a class="nav-link active" href="/quiz">📝 Quiz</a>
+        <a class="nav-link" href="/dashboard">📊 Tiến độ</a>
+        <div class="sidebar-spacer"></div>
+        <form id="logout-form" class="logout-form">
+            <button type="submit">Đăng xuất</button>
+        </form>
+    </aside>
+    <main class="quiz-shell">
+        <h1>📝 Quiz luyện tập lập trình C</h1>
+        <p class="caption">Chọn chủ đề và làm bài để kiểm tra kiến thức — hệ thống chấm điểm tự động và giải thích chi tiết.</p>
+
+        <div id="quiz-picker" class="quiz-picker">
+            <label>
+                Chủ đề
+                <select id="topic-select">
+                    <option value="">Tất cả chủ đề</option>
+                </select>
+            </label>
+            <div id="quiz-list" class="quiz-list"></div>
+        </div>
+
+        <div id="quiz-runner" class="quiz-runner hidden">
+            <button id="back-to-list" type="button" class="link-btn">← Quay lại danh sách</button>
+            <h2 id="quiz-title"></h2>
+            <form id="quiz-form"></form>
+        </div>
+
+        <div id="quiz-result" class="quiz-result hidden"></div>
+    </main>
+</div>
+{% endblock %}
+{% block extra_js %}
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js"></script>
+<script src="/static/js/quiz.js"></script>
+{% endblock %}
