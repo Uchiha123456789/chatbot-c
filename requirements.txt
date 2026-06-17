@@ -12,6 +12,7 @@ pydantic-settings==2.14.1
 
 # Database
 SQLAlchemy==2.0.50
+psycopg2-binary==2.9.10
 
 # Auth
 bcrypt==5.0.0

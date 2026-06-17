@@ -8,6 +8,7 @@ class Settings(BaseSettings):
     google_api_key: str
     secret_key: str = "dev-secret-key-change-me"
 
+    database_url: str | None = None  # Nếu set → dùng PostgreSQL; nếu None → fallback SQLite
     db_path: str = "./data/app.db"
     chroma_dir: str = "./chroma_db"
     chroma_collection: str = "giao_trinh_c"
